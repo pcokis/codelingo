@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#E8E8E8
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #191919;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    padding: 2rem;
+    transform: translateX(10%);
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    transform: translateX(-10%);
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.lesson {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+@media only screen and (max-width: 800px) {
+    .lesson {
+        grid-template-columns: 5% 90% 5%;
+    }
+}
+
+.lessonlist {
+    margin: 25px;
+    padding: 10px;
+    text-align: left;
+    list-style-position: inside;
+    background: #191919;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .lessonlist {
+        visibility: hidden;
+    }
+}
+
+.lessoncontent {
+    padding: 25px;
+}
+
+
+.glowlink:hover {
+    color: #9be7ac;
+    text-shadow: 0 5px 15px #E8E8E8    ;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
+    align-items: center;
+    text-align: center;
+    color: #E8E8E8;
+}
+
+.about {
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 0%;
+    transform: translateX(10%);
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #272727;
+    margin: 50px 10px;
+    padding: 15px;
+    box-shadow: 0 0 50px rgba(94,232,124,0.25);
+}
+
+.course {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 10px;
+    background-color: #272727;
+    margin: 50px 50px;
+    padding: 15px;
+    box-shadow: 0 0 50px rgba(94,232,124,0.1);
+}
+
+.overlay {
+    position: absolute;
+    align-items: center;
+    bottom: 100%;
+    right: 0%;
+    background-color: rgba(39,39,39,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.course:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.courses {
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.biglogo {
+    width: 750px;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto/2;
+}
+
+button {
+    width: 250px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: medium;
+    border: 4px solid #5EE87C;
+    background: #5EE87C;
+    color: #272727;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.glowbutton:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.725);
+}
+
+::selection {
+    color: #ffffff;
+    background: #5EE87C;
+}
+
+a {
+    color:#5EE87C;
+}
